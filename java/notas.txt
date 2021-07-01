@@ -1,0 +1,112 @@
+
+RF01 
+
+Cadastro de usuários. 
+
+O sistema deve permitir o cadastro de usuários do tipo motorista e cliente, com os dados: nome, e-mail e senha. 
+
+RF02 
+
+Cadastro das informações dos escolares. 
+
+O sistema deve permitir que um motorista cadastre as informações sobre o escolar (descrição, telefone, bairros, instituições de ensino atendidas, número de acessos) e adicione fotos. 
+
+RF03 
+
+ 
+
+Listagem dos motoristas de escolar. 
+
+O sistema deve ser capaz de listar os motoristas de escolares na tela. 
+
+RF04 
+
+Filtragem de motoristas a partir da escola/faculdade atendida. 
+
+O sistema deve permitir que um cliente possa filtrar os motoristas listados. 
+
+ 
+
+RF05 
+
+ 
+
+Pesquisar motorista. 
+
+ 
+
+O sistema deve permitir que um cliente pesquise por um motorista específico. 
+
+ 
+
+RF06 
+
+ 
+
+Mostrar motorista selecionado. 
+
+O sistema deve permitir que um cliente escolha um motorista específico e seja direcionado a sua tela para visualizar mais detalhes. 
+
+ 
+
+RF07 
+
+ 
+
+Atualizar números de acessos. 
+
+O sistema deve atualizar o valor da quantidade de acessos na tela do motorista toda vez que esta for visualizada. 
+
+ 
+
+RF08 
+
+ 
+
+Atualizar informações do usuário. 
+
+O sistema deve permitir que o usuário (motorista ou cliente) possa visualizar as suas informações e alterá-las. 
+
+RF09 
+
+ 
+
+Salvar os dados no banco de dados. 
+
+O sistema deve salvar os dados dos usuários no banco de dados. 
+
+ 
+
+ 
+
+ 
+
+2.  Trabalhos Futuros   
+
+ 
+
+Afim de melhorar o aplicativo e torna-lo mais prático, pretende-se implementar as seguintes melhorias no app:  
+
+Criar uma tela específica para o perfil do cliente, em que a mesma teria opção de colocar foto de perfil e incluir a sua instituição de ensino.  
+
+Colocar a imagem de perfil do motorista na listagem dos mesmos para os clientes.  
+
+Permitir o uso da câmera por ambos os usuários.  
+
+Incluir API’s de mapas para mostrar ao cliente os motoristas que atendem a sua região. Criar um chat para facilitar a comunicação entre cliente e motorista. 
+
+Disponibilizar a opção de filtrar os motoristas listados pelas instituições de ensino e bairros atendidos. 
+
+Disponibilizar a opção de pesquisar um motorista específico pelo nome. 
+
+Adicionar a opção de redefinir a sua senha e mudar o e-mail cadastrado. 
+
+Adicionar a opção, para os motoristas, de excluir fotos já cadastradas. 
+
+ 
+
+3.  Observações 
+
+ 
+
+Ao longo do desenvolvimento do aplicativo foram encontradas algumas dificuldades e por isso não foi possível implementar todas as funcionalidades desejadas. Não foi possível adicionar as fotos dos motoristas nos cards mostrados para os clientes e adicionar as funcionalidades de filtrar a listagem de motoristas, realizar pesquisas por um motorista em específico e alterar os dados de e-mail e senha do usuário. Houve, também, uma alteração na forma como salvamos os dados, antes pretendia-se salvar em um banco de dados, mas para um melhor funcionamento os dados estão sendo salvos no Firebase. 

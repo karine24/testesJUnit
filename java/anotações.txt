@@ -1,0 +1,65 @@
+https://start.spring.io/
+
+pom.xml
+	- Informações sobre o projetp
+	- Dependencias do projeto
+	- Pluggins
+	
+Gerenciador das dependencias:
+	- Lê o arquivo pom.xml procura na nuvem o repositório e baixa as dependencias do projeto
+
+Ciclo de vida:
+	- Fase de compilação -> teste -> instalação
+	
+@RestController -> marca a classe como controller
+@RequestMapping -> quero mapear uma requisição para dentro do método
+	Por padrão, aponta para requisição tipo GET
+	
+Exemplo: @RequestMapping(method = RequestMethod.GET, path = "/ola")
+    public String ola() {
+        return "Olá Spring Boot!";
+    }
+	
+Mapeamento mais especifico:
+@GetMapping
+Mais de uma url mapeada: @GetMapping(path = {"/ola", "/saudacoes"})
+
+Java Script Object Notation (JSON)
+
+Métodos HTTP:
+GET -> Obter e ler informações
+	Requisições de alteração:
+POST -> Inserir novos dados do servidor
+PUT -> Alteração total (Mais utilizado)
+PATCH -> Alteração parcial
+DELETE -> Exclusão de dados
+
+OPTIONS -> retorna os metodos http suportados por uma url
+TRACE -> Requisição de teste
+HEAD -> Parecida com o get, porém não tem retorno igual o get
+
+@PathVariable -> mapeia o valor usado na url para a variavel no parametro
+Ex.: @GetMapping("/{id}")
+    public Cliente obterClientePorId1(@PathVariable int id) { ... }
+	
+@RequestParam -> envio dos valores pela url
+Ex.: @GetMapping
+		public Cliente obterClientePorId2(@RequestParam(name="id") int id) { ... }
+		
+
+Padrão MVC: Model - View - Controller
+Model: 
+	Camada de negócio, onde há as entidades e camadas de acesso a dados. Tudo que pertence a aplicação em termos de negócio e validação.
+	Camada ligada ao banco de dados.
+	
+View:
+	Responsável por renderizar a resposta
+	
+Controller:
+	Controle do fluxo da aplicação. Primeira camada que recebe a requisição.
+	
+	
+
+
+	
+	
